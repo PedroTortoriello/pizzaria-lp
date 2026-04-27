@@ -66,7 +66,7 @@ export function HeroSection() {
       <div aria-hidden="true" className="image-vignette absolute inset-0" />
       <div
         aria-hidden="true"
-        className="absolute inset-0 flour-dust bg-[linear-gradient(180deg,rgba(7,8,6,0.18),rgba(0,140,69,0.22)_28%,rgba(7,8,6,0.52)_52%,rgba(205,33,42,0.2)_72%,rgba(7,8,6,0.96))]"
+        className="absolute inset-0 bg-[linear-gradient(180deg,rgba(7,8,6,0.18),rgba(0,140,69,0.22)_28%,rgba(7,8,6,0.52)_52%,rgba(205,33,42,0.2)_72%,rgba(7,8,6,0.96))]"
       />
 
       <motion.div
