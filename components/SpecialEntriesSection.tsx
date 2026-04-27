@@ -22,7 +22,9 @@ export function SpecialEntriesSection() {
               Crostini e Canapés.
             </h2>
           </div>
-  
+          <p className="text-base leading-8 text-cream/70 md:text-lg">
+            R$ 8,90 por pessoa.
+          </p>
         </Reveal>
 
         <StaggerReveal className="mt-12 grid gap-5 lg:grid-cols-2">

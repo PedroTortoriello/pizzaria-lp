@@ -122,22 +122,22 @@ export const eventDetails = [
   {
     label: "Duração do rodízio",
     value: "4 horas",
-    copy: "3 horas de pizzas salgadas e 1 hora de pizzas doces, com horário ajustável conforme o evento."
+    copy: "3 horas de pizzas salgadas, 1 hora de pizzas doces e horário ajustável conforme o evento."
   },
   {
     label: "Formato por entradas",
     value: "Opcional",
-    copy: "Serviço organizado em entradas de 30 minutos, com 2h30 de pizzas salgadas e 1h de doces."
+    copy: "Serviço organizado em entradas de 30 minutos, com 2h30min de pizzas salgadas e 1h de pizzas doces."
   },
   {
     label: "Chegada da equipe",
     value: "2h antes",
-    copy: "Tempo reservado para montagem, organização da bancada e preparação do fluxo de serviço."
+    copy: "Chegada com 2h de antecedência para montagem."
   },
   {
     label: "Bebidas",
     value: "Não inclusas",
-    copy: "O buffet não fornece bebidas, mantendo o foco na operação gastronômica das pizzas."
+    copy: "Não fornecemos bebidas."
   }
 ];
 
@@ -150,9 +150,9 @@ export const eventStructure = [
 ];
 
 export const staffRules = [
-  "1 pizzaiolo especializado a cada 50 convidados.",
-  "1 garçom opcional a cada 30 convidados.",
-  "Garçom: R$ 150 por profissional.",
+  "Pizzaiolo especializado: 1 pizzaiolo a cada 50 convidados.",
+  "Garçom (opcional): 1 garçom a cada 30 convidados.",
+  "Valor do garçom: R$ 150 por profissional.",
   "Mínimo de 30 convidados; eventos menores seguem esse valor.",
   "Requisitos do local: 1 tomada 220V por forno e local coberto para a equipe."
 ];
@@ -171,7 +171,34 @@ export const serviceFormats = [
   {
     title: "Garçom",
     copy: "Mesa expositora com apoio de garçons servindo a pizza diretamente aos convidados.",
-    note: "Opcional"
+    note: "R$ 150 por profissional"
+  }
+];
+
+export const additionalValues = [
+  {
+    title: "Experiência Premium",
+    value: "R$ 6,90",
+    unit: "por pessoa",
+    copy: "Pratos de louça, talheres em inox e guardanapos."
+  },
+  {
+    title: "Garçom (opcional)",
+    value: "R$ 150",
+    unit: "por profissional",
+    copy: "1 garçom a cada 30 convidados."
+  },
+  {
+    title: "Crostini",
+    value: "R$ 8,90",
+    unit: "por pessoa",
+    copy: "Entrada especial."
+  },
+  {
+    title: "Canapés",
+    value: "R$ 8,90",
+    unit: "por pessoa",
+    copy: "Entrada especial."
   }
 ];
 
@@ -184,7 +211,7 @@ export const specialEntries = [
   {
     title: "Canapés",
     price: "R$ 8,90 por pessoa",
-    copy: "Torrada crocante com maionese da casa, molho de tomate artesanal, rúcula fresca, presunto de Parma e raspas de limão siciliano."
+    copy: "Torrada crocante com maionese da casa, molho de tomate artesanal, rúcula fresca, presunto de Parma e um toque de raspas de limão siciliano."
   }
 ];
 

@@ -116,6 +116,15 @@ O conteúdo textual foi organizado a partir do PDF oficial da Paradise Pizza's:
 - Política de valores e pagamentos
 - Redes sociais oficiais
 
+## Valores Adicionais
+
+Valores informados no material comercial:
+
+- Experiência Premium: R$ 6,90 por pessoa
+- Garçom opcional: R$ 150 por profissional
+- Crostini: R$ 8,90 por pessoa
+- Canapés: R$ 8,90 por pessoa
+
 As informações editáveis ficam em:
 
 ```text

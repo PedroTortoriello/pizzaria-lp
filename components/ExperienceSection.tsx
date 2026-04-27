@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import {
+  Banknote,
   CheckCircle2,
   Clock3,
   ConciergeBell,
@@ -10,6 +11,7 @@ import {
 } from "lucide-react";
 import { Reveal, StaggerReveal } from "@/components/Reveal";
 import {
+  additionalValues,
   eventDetails,
   eventStructure,
   images,
@@ -170,6 +172,8 @@ export function ExperienceSection() {
           </motion.article>
         ))}
       </StaggerReveal>
+
+
     </section>
   );
 }
