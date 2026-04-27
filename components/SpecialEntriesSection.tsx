@@ -19,14 +19,10 @@ export function SpecialEntriesSection() {
               Entradas especiais
             </p>
             <h2 className="mt-4 font-serif text-4xl font-bold leading-tight text-cream md:text-5xl">
-              Um primeiro serviço para abrir o apetite do evento.
+              Crostini e Canapés.
             </h2>
           </div>
-          <p className="text-base leading-8 text-cream/70 md:text-lg">
-            O PDF apresenta opções de entradas que deixam a experiência mais completa:
-            preparos crocantes, aromáticos e com finalizações italianas antes do
-            rodízio de pizzas.
-          </p>
+  
         </Reveal>
 
         <StaggerReveal className="mt-12 grid gap-5 lg:grid-cols-2">
@@ -68,7 +64,7 @@ export function SpecialEntriesSection() {
             rel="noreferrer"
             target="_blank"
           >
-            Incluir entradas no orçamento
+            Solicitar Orçamento
             <Sparkles aria-hidden="true" size={18} />
           </a>
         </Reveal>

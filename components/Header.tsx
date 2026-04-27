@@ -1,7 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Menu, MessageCircle } from "lucide-react";
+import { Menu } from "lucide-react";
+import { WhatsAppIcon } from "@/components/BrandIcons";
 import { whatsappUrl } from "@/data/site";
 
 const navItems = [
@@ -46,8 +47,8 @@ export function Header() {
             rel="noreferrer"
             target="_blank"
           >
-            <MessageCircle aria-hidden="true" size={17} />
-            Pedir Agora
+            <WhatsAppIcon size={17} />
+            Solicitar Orçamento
           </a>
 
           <button

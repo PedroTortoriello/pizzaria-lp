@@ -1,56 +1,231 @@
-# Paradise Pizza's Landing Page
+# Paradise Pizza's
 
-Landing page premium para a Paradise Pizza's, construída com Next.js, TypeScript, Tailwind CSS e Framer Motion.
+Site institucional da Paradise Pizza's para apresentação do buffet gourmet de pizza de longa fermentação, cardápio, estrutura de evento, entradas especiais, política de pagamento e canais de contato.
 
-## Rodando localmente
+## Stack
+
+- Next.js com App Router
+- React
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+- Lucide React
+
+## Requisitos
+
+- Node.js 20 LTS ou superior
+- npm 10 ou superior
+
+## Instalação
 
 ```bash
 npm install
+```
+
+## Ambiente Local
+
+```bash
 npm run dev
 ```
 
-Depois acesse `http://localhost:3000`.
+O projeto roda em:
 
-## Conteúdo usado do PDF
+```text
+http://localhost:3000
+```
 
-- Massa de fermentação natural de 48 horas.
-- Buffet gourmet para casamentos, aniversários, eventos corporativos e confraternizações.
-- Rodízio de 4 horas, com 3 horas de pizzas salgadas e 1 hora de pizzas doces.
-- Estrutura com forno elétrico profissional, bancada, mesa expositora e equipe.
-- Sabores: Caprese, Pepperoni, Margherita, Calabresa, Frango com Catupiry, Di Parma, Banana Nevada e outros.
-- Redes sociais extraídas da última página do PDF.
+O script de desenvolvimento usa Webpack:
 
-## Ajustes antes de publicar
+```json
+"dev": "next dev --webpack"
+```
 
-- Trocar o número em `data/site.ts` na constante `whatsappUrl`.
-- Informar endereço real e horários fixos no `Footer`, caso existam.
-- Substituir ou baixar as imagens remotas para `public/` se desejar deploy 100% independente de terceiros.
+Essa configuração evita instabilidades de chunks em ambiente local e mantém o comportamento previsível durante manutenção.
 
-## Referências visuais
+## Scripts
 
-Imagens pesquisadas no Unsplash e usadas via URLs remotas:
+```bash
+npm run dev
+```
 
-- Forno/pizzaiolo: https://unsplash.com/photos/a-chef-cooks-pizza-in-a-wood-fired-oven-7TAG9wlv1uw
-- Forno a lenha: https://unsplash.com/photos/pizza-baking-in-a-wood-fired-oven-with-glowing-embers-SJROkV7Q8oU
-- Pizza com mozzarella e manjericão: https://unsplash.com/photos/a-delicious-pizza-with-mozzarella-and-basil-DPrldCuaoJ8
-- Massa artesanal: https://unsplash.com/photos/hands-kneading-dough-dusted-with-flour-zZq_Iopl5_Q
-- Pizzas e ingredientes: https://unsplash.com/photos/raw-pizza-with-tomatoes-and-mozzarella-cheese-lZNzoxOQUdE
+Sobe o servidor local de desenvolvimento.
 
-Vídeos pesquisados no Pexels e usados por endpoint remoto de download:
+```bash
+npm run typecheck
+```
 
-- Pizzaiolo preparando pizza em forno externo: https://www.pexels.com/video/pizzaiolo-preparing-pizza-in-outdoor-oven-35708499/
-- Pizza artesanal assando em forno a lenha: https://www.pexels.com/video/artisan-pizza-baking-in-wood-fired-oven-32109696/
-- Chef abrindo massa de pizza: https://www.pexels.com/video/chef-stretching-pizza-dough-5897985/
-- Pizza em forno de tijolos: https://www.pexels.com/video/a-pizza-in-a-brick-oven-6221680/
+Executa a validação TypeScript sem gerar build.
 
-O Pexels pode aplicar proteção Cloudflare em requests automatizados. Por isso a página usa os endpoints `https://www.pexels.com/download/video/{id}/` com imagem de fallback.
+```bash
+npm run build
+```
 
-## Loader
+Gera o build otimizado de produção.
 
-Referências pesquisadas para o preloader:
+```bash
+npm run start
+```
 
-- LottieFiles Pizza Loader: https://lottiefiles.com/free-animation/pizza-loader-kdMXubEnNE
-- LottieFiles Pizza Preloader: https://lottiefiles.com/free-animations/pizza-preloader
-- IconScout Pizza Loader: https://iconscout.com/lottie-animations/pizza-loader
+Serve o build de produção gerado pelo Next.js.
 
-A implementação final usa Framer Motion e CSS nativos para manter o carregamento estável, sem depender de hotlink externo.
+## Estrutura Principal
+
+```text
+app/
+  icon.svg              Favicon do site
+  globals.css           Estilos globais e utilitários visuais
+  layout.tsx            Metadata e layout raiz
+  page.tsx              Composição da página
+
+components/
+  BrandIcons.tsx        Ícones SVG de WhatsApp, Instagram, TikTok e YouTube
+  Header.tsx            Navegação fixa e CTA principal
+  HeroSection.tsx       Primeira dobra do site
+  SitePreloader.tsx     Loading inicial de 3 segundos
+  StorySection.tsx      Experiência Paradise Pizza's
+  ItalianSoulSection.tsx Destaques visuais da experiência
+  ExperienceSection.tsx Estrutura, duração e serviço
+  MenuHighlights.tsx    Cardápio com imagens do PDF
+  SpecialEntriesSection.tsx Entradas especiais
+  PoliciesSection.tsx   Política de valores e pagamentos
+  GalleryIngredients.tsx Galeria visual
+  Footer.tsx            Contato e redes sociais
+  FloatingWhatsApp.tsx  CTA flutuante para WhatsApp
+
+data/
+  site.ts               Conteúdo centralizado do site
+
+public/
+  pdf-pizzas/           Imagens extraídas do PDF
+```
+
+## Conteúdo
+
+O conteúdo textual foi organizado a partir do PDF oficial da Paradise Pizza's:
+
+- Pizza de longa fermentação
+- Buffet gourmet
+- Fermentação natural de 48 horas
+- Produção artesanal
+- Ingredientes selecionados
+- Pizzas montadas e assadas na hora
+- Rodízio de 4 horas
+- Estrutura do evento
+- Formatos de serviço
+- Entradas especiais
+- Política de valores e pagamentos
+- Redes sociais oficiais
+
+As informações editáveis ficam em:
+
+```text
+data/site.ts
+```
+
+## Cardápio
+
+As imagens das pizzas foram extraídas do PDF, recortadas, centralizadas e normalizadas para manter consistência visual nos cards.
+
+Arquivos finais:
+
+```text
+public/pdf-pizzas/normalized/
+```
+
+Sabores cadastrados:
+
+- Caprese
+- Pepperoni
+- Margherita
+- Abobrinha
+- Três Queijos
+- Calabresa
+- Frango com Catupiry
+- Rúcula
+- Di Parma
+- Morango com Chocolate
+- Banana Nevada
+
+## Contatos e Redes Sociais
+
+Os links ficam centralizados em `data/site.ts`:
+
+```ts
+export const whatsappUrl = "...";
+
+export const socialLinks = {
+  instagram: "...",
+  tiktok: "...",
+  youtube: "..."
+};
+```
+
+Para alterar WhatsApp, Instagram, TikTok ou YouTube, edite apenas esse arquivo.
+
+## Imagens e Vídeos
+
+O cardápio usa assets locais extraídos do PDF.
+
+Algumas seções visuais usam imagens e vídeos remotos definidos em `data/site.ts`. Antes de publicar em um ambiente final de longo prazo, é recomendado baixar esses arquivos para `public/` e trocar os links remotos por caminhos locais.
+
+## Checklist Antes de Publicar
+
+1. Confirmar número do WhatsApp em `data/site.ts`.
+2. Confirmar links de Instagram, TikTok e YouTube.
+3. Revisar textos comerciais com o cliente.
+4. Executar `npm run typecheck`.
+5. Executar `npm run build`.
+6. Testar desktop e mobile.
+7. Testar botões de WhatsApp e redes sociais.
+8. Conferir se todas as imagens do cardápio carregam.
+9. Conferir favicon em `/icon.svg`.
+
+## Build de Produção
+
+```bash
+npm run typecheck
+npm run build
+```
+
+Se ambos passarem, o projeto está apto para deploy.
+
+Para testar localmente o build final:
+
+```bash
+npm run start
+```
+
+## Deploy
+
+O projeto é compatível com deploy em Vercel.
+
+Configuração recomendada:
+
+```text
+Framework Preset: Next.js
+Install Command: npm install
+Build Command: npm run build
+Output Directory: .next
+```
+
+Não há variáveis de ambiente obrigatórias na versão atual.
+
+## Manutenção
+
+- Conteúdo textual e URLs: `data/site.ts`
+- Componentes visuais: `components/`
+- Paleta e tokens do Tailwind: `tailwind.config.ts`
+- Estilos globais: `app/globals.css`
+- Favicon: `app/icon.svg`
+- Imagens do cardápio: `public/pdf-pizzas/normalized/`
+
+## Qualidade
+
+Última validação recomendada antes de entrega:
+
+```bash
+npm run typecheck
+npm run build
+```
+
+Esses comandos devem passar sem erros antes de qualquer publicação.

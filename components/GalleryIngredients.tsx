@@ -11,15 +11,16 @@ export function GalleryIngredients() {
       <div className="mx-auto max-w-7xl">
         <Reveal className="max-w-3xl">
           <p className="text-sm font-bold uppercase text-italyRed">
-            Galeria e ingredientes
+            Montagem artesanal • forno • serviço imediato
           </p>
           <h2 className="mt-4 font-serif text-4xl font-bold leading-tight text-cream md:text-5xl">
-            Massa, fogo e ingredientes com protagonismo visual.
+            Pizzas servidas em até 3 minutos.
           </h2>
           <div className="mt-5 h-1 w-44 rounded-full italian-ribbon" />
           <p className="mt-6 text-base leading-8 text-cream/70 md:text-lg">
-            A landing page usa fotografia em escala generosa para comunicar textura,
-            técnica e frescor sem recorrer aos clichês visuais de pizzaria.
+            Nossa massa é produzida com fermentação natural de 48 horas,
+            produção artesanal, ingredientes selecionados e pizzas montadas e
+            assadas na hora.
           </p>
         </Reveal>
 

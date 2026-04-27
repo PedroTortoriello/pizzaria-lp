@@ -5,7 +5,6 @@ import {
   ArrowRight,
   CalendarCheck,
   ChefHat,
-  Flame,
   Leaf,
   Pizza,
   Wheat
@@ -16,14 +15,15 @@ import { reveal, stagger } from "@/lib/animations";
 
 const stats = [
   { label: "48h", copy: "fermentação natural", tone: "text-italyGreen" },
-  { label: "4h", copy: "rodízio completo", tone: "text-italyWhite" },
-  { label: "3min", copy: "pizzas servidas", tone: "text-italyRed" }
+  { label: "4 horas", copy: "tempo total", tone: "text-italyWhite" },
+  { label: "até 3min", copy: "pizzas servidas", tone: "text-italyRed" }
 ];
 
 const ingredients = [
-  { label: "Molho de tomate", icon: Pizza, tone: "text-italyRed" },
-  { label: "Manjericão fresco", icon: Leaf, tone: "text-italyGreen" },
-  { label: "Massa artesanal", icon: Wheat, tone: "text-italyWhite" }
+  { label: "Fermentação natural de 48 horas", icon: Wheat, tone: "text-italyGreen" },
+  { label: "Produção artesanal", icon: ChefHat, tone: "text-italyWhite" },
+  { label: "Ingredientes selecionados", icon: Leaf, tone: "text-italyRed" },
+  { label: "Pizzas montadas e assadas na hora", icon: Pizza, tone: "text-italyWhite" }
 ];
 
 export function HeroSection() {
@@ -97,7 +97,7 @@ export function HeroSection() {
           >
             <span className="h-1 w-56 rounded-full italian-ribbon" />
             <span className="hidden font-serif text-xl italic text-italyWhite/80 sm:inline">
-              sapore italiano
+              Uma experiência inesquecível
             </span>
           </motion.div>
 
@@ -137,9 +137,8 @@ export function HeroSection() {
             className="mt-7 max-w-2xl text-lg leading-8 text-cream/80 md:text-xl"
             variants={reveal}
           >
-            Pizzas de longa fermentação montadas e assadas na hora, com serviço
-            artesanal e atmosfera italiana para transformar celebrações em uma
-            experiência gastronômica.
+            Pizza de longa fermentação, buffet gourmet e uma experiência
+            gastronômica pensada para eventos.
           </motion.p>
 
           <motion.div className="mt-10 flex flex-col gap-4 sm:flex-row" variants={reveal}>
@@ -149,15 +148,15 @@ export function HeroSection() {
               rel="noreferrer"
               target="_blank"
             >
-              Pedir Agora
+              Solicitar Orçamento
               <ArrowRight aria-hidden="true" size={18} />
             </a>
             <a
               className="focus-ring inline-flex min-h-12 items-center justify-center gap-3 rounded-lg border border-italyRed/40 bg-italyRed/10 px-6 text-base font-bold text-cream backdrop-blur transition hover:border-italyRed hover:bg-italyRed/20"
               href="#menu"
             >
-              Ver Destaques
-              <Flame aria-hidden="true" size={18} />
+              Cardápio
+              <Pizza aria-hidden="true" size={18} />
             </a>
           </motion.div>
 
@@ -187,7 +186,7 @@ export function HeroSection() {
             <CalendarCheck aria-hidden="true" className="text-sage" size={17} />
             Casamentos, aniversários, eventos corporativos e confraternizações
           </span>
-          <span className="text-italyRed">Massa artesanal • forno profissional • serviço imediato</span>
+          <span className="text-italyRed">Montagem artesanal • forno • serviço imediato</span>
         </div>
       </div>
     </section>

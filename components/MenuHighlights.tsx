@@ -11,7 +11,7 @@ export function MenuHighlights() {
   const groups = [
     {
       label: "Pizzas salgadas",
-      note: "Clássicas e autorais",
+      note: "Todas as pizzas salgadas acompanham molho de tomate",
       items: menuItems.filter((item) => !sweetNames.has(item.name)),
       tone: "text-deepGreen",
       border: "border-italyGreen/25",
@@ -19,7 +19,6 @@ export function MenuHighlights() {
     },
     {
       label: "Pizzas doces",
-      note: "Finalização do rodízio",
       items: menuItems.filter((item) => sweetNames.has(item.name)),
       tone: "text-italyRed",
       border: "border-italyRed/25",
@@ -38,10 +37,10 @@ export function MenuHighlights() {
         <Reveal className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <div>
             <p className="text-sm font-bold uppercase text-italyRed">
-              Cardápio do rodízio
+              Sabores
             </p>
             <h2 className="mt-4 max-w-3xl font-serif text-4xl font-bold leading-tight text-ink md:text-5xl">
-              Sabores com cara de menu italiano, do forno para a mesa.
+              Escolha um dos seguintes sabores para o seu rodízio
             </h2>
             <div className="mt-5 h-1 w-56 rounded-full italian-ribbon" />
           </div>
@@ -51,7 +50,7 @@ export function MenuHighlights() {
             rel="noreferrer"
             target="_blank"
           >
-            Montar meu evento
+            Solicitar Orçamento
             <ShoppingBag aria-hidden="true" size={18} />
           </a>
         </Reveal>
@@ -68,9 +67,11 @@ export function MenuHighlights() {
                   <p className={`text-sm font-extrabold uppercase ${group.tone}`}>
                     {group.label}
                   </p>
-                  <h3 className="mt-2 font-serif text-3xl font-bold text-ink md:text-4xl">
-                    {group.note}
-                  </h3>
+                  {group.note ? (
+                    <h3 className="mt-2 max-w-2xl font-serif text-3xl font-bold text-ink md:text-4xl">
+                      {group.note}
+                    </h3>
+                  ) : null}
                 </div>
                 <Pizza aria-hidden="true" className={group.tone} size={28} />
               </div>
@@ -98,7 +99,7 @@ export function MenuHighlights() {
                     <div className="relative mt-4 flex min-w-0 flex-1 flex-col sm:mt-0">
                       <div className="flex items-center justify-between gap-3">
                         <p className={`text-xs font-extrabold uppercase ${group.tone}`}>
-                          {item.badge}
+                          {group.label}
                         </p>
                         <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-ink/10 bg-ink/10 text-ink/55">
                           <Pizza aria-hidden="true" size={16} />
@@ -116,7 +117,7 @@ export function MenuHighlights() {
                         rel="noreferrer"
                         target="_blank"
                       >
-                        Quero este sabor
+                        Solicitar Orçamento
                         <ArrowRight aria-hidden="true" size={16} />
                       </a>
                     </div>

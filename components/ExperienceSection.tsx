@@ -32,15 +32,15 @@ export function ExperienceSection() {
       <div className="mx-auto mt-12 grid max-w-7xl gap-12 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
         <Reveal>
           <p className="text-sm font-bold uppercase text-italyGreen">
-            Do forno à celebração
+            Estrutura do evento
           </p>
           <h2 className="mt-4 font-serif text-4xl font-bold leading-tight text-cream md:text-5xl">
-            Um buffet organizado para servir pizzas em até 3 minutos.
+            Pizzas servidas em até 3 minutos.
           </h2>
           <p className="mt-6 text-base leading-8 text-cream/70 md:text-lg">
-            A equipe chega com antecedência para montar a operação, preparar a
-            bancada e ajustar o ritmo do rodízio ao perfil do evento. O serviço
-            pode acontecer em entradas de 30 minutos ou no fluxo tradicional.
+            Chegada com 2h de antecedência para montagem. Forno elétrico
+            profissional, bancada para preparo, mesa expositora e equipe adequada
+            ao porte e perfil do evento.
           </p>
           <div className="mt-8 inline-flex items-center gap-3 rounded-lg border border-italyRed/30 bg-italyRed/10 px-4 py-3 text-sm font-semibold text-italyWhite">
             <ShieldCheck aria-hidden="true" size={18} />
@@ -69,13 +69,13 @@ export function ExperienceSection() {
             <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(7,8,6,0.04),rgba(7,8,6,0.78))]" />
             <div className="absolute bottom-0 left-0 right-0 p-5">
               <p className="text-sm font-bold uppercase text-italyGreen">
-                Serviço ao vivo
+                Montagem artesanal • forno • serviço imediato
               </p>
               <h3 className="mt-2 font-serif text-2xl font-bold text-cream">
-                Forno, massa e finalização na hora.
+                Pizzas servidas em até 3 minutos.
               </h3>
               <p className="mt-3 max-w-sm text-sm leading-6 text-cream/70">
-                Um ponto visual de experiência para convidados acompanharem o preparo.
+                Pizzas montadas e assadas na hora.
               </p>
             </div>
           </motion.div>

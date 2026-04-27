@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Paradise Pizza's | Buffet Gourmet de Pizza",
   description:
-    "Landing page premium para a Paradise Pizza's, buffet gourmet de pizzas de longa fermentação para eventos.",
+    "Pizza de longa fermentação e buffet gourmet para casamentos, aniversários, eventos corporativos, confraternizações e celebrações especiais.",
   icons: {
     icon: "/icon.svg",
     shortcut: "/icon.svg",

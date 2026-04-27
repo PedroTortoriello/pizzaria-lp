@@ -21,11 +21,11 @@ export function PoliciesSection() {
             Política de valores & pagamentos
           </p>
           <h2 className="mt-4 font-serif text-4xl font-bold leading-tight text-cream md:text-5xl">
-            Regras comerciais claras antes da reserva da data.
+            Reserva da data, parcelamento e formas de pagamento.
           </h2>
           <p className="mt-6 text-base leading-8 text-cream/70 md:text-lg">
-            Incluí as condições do PDF para reduzir dúvidas no WhatsApp e deixar a
-            tomada de decisão mais rápida para eventos.
+            Para reserva da data, é necessário o pagamento de 20% do valor total.
+            Os 80% restantes deverão ser quitados até a data do evento.
           </p>
         </Reveal>
 

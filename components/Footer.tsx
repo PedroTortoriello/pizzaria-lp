@@ -34,7 +34,7 @@ export function Footer() {
           <div className="mt-5 space-y-4 text-sm leading-6 text-cream/70">
             <p className="flex gap-3">
               <MapPin aria-hidden="true" className="mt-1 shrink-0 text-sage" size={18} />
-              Eventos sob agendamento. Endereço de base a confirmar.
+              Casamentos, aniversários, eventos corporativos, confraternizações e celebrações especiais.
             </p>
             <p className="flex gap-3">
               <Clock3 aria-hidden="true" className="mt-1 shrink-0 text-italyRed" size={18} />

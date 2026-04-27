@@ -1,5 +1,5 @@
 export const whatsappUrl =
-  "https://wa.me/5500000000000?text=Ol%C3%A1%2C%20quero%20montar%20um%20evento%20com%20a%20Paradise%20Pizza%27s.";
+  "https://wa.me/5511933453194?text=Ol%C3%A1%2C%20quero%20montar%20um%20evento%20com%20a%20Paradise%20Pizza%27s.";
 
 export const socialLinks = {
   instagram:
@@ -21,8 +21,7 @@ export const images = {
     "https://images.unsplash.com/photo-1768966597543-14fb753b871f?auto=format&fit=crop&w=1600&q=80",
   parma:
     "https://images.unsplash.com/photo-1768187067373-1bff158b0ad7?auto=format&fit=crop&w=1600&q=80",
-  loaderPizza:
-    "https://images.pexels.com/photos/20115306/pexels-photo-20115306.jpeg?auto=compress&cs=tinysrgb&w=3840",
+  loaderPizza: "/pdf-pizzas/normalized/margherita.png",
   capresePizza: "/pdf-pizzas/normalized/caprese.png",
   diParmaPizza: "/pdf-pizzas/normalized/di-parma.png",
   margheritaPizza: "/pdf-pizzas/normalized/margherita.png",
@@ -63,69 +62,58 @@ export const menuItems = [
   {
     name: "Caprese",
     description:
-      "Muçarela, tomate cereja, pesto de azeitona preta, muçarela de búfala e manjericão.",
-    badge: "Fresco",
+      "Muçarela, tomate cereja, pesto de azeitona preta, muçarela de búfala e manjericão",
     image: images.capresePizza
   },
   {
-    name: "Di Parma",
-    description:
-      "Muçarela, presunto parma e finalização de raspas de limão siciliano.",
-    badge: "Assinatura",
-    image: images.diParmaPizza
-  },
-  {
-    name: "Margherita",
-    description: "Muçarela, molho de tomate artesanal e manjericão fresco.",
-    badge: "Clássica",
-    image: images.margheritaPizza
-  },
-  {
     name: "Pepperoni",
-    description: "Muçarela, pepperoni e parmesão em uma massa leve de longa fermentação.",
-    badge: "Intensa",
+    description: "Muçarela, pepperoni e parmesão",
     image: images.pepperoniPizza
   },
   {
+    name: "Margherita",
+    description: "Muçarela e manjericão",
+    image: images.margheritaPizza
+  },
+  {
     name: "Abobrinha",
-    description: "Muçarela, abobrinha laminada e bacon sobre molho de tomate.",
-    badge: "Leve",
+    description: "Muçarela, abobrinha e bacon",
     image: images.zucchiniPizza
   },
   {
     name: "Três Queijos",
-    description: "Muçarela, gorgonzola e catupiry em equilíbrio cremoso.",
-    badge: "Cremosa",
+    description: "Muçarela, gorgonzola e catupiry",
     image: images.threeCheesePizza
   },
   {
     name: "Calabresa",
-    description: "Calabresa, cebola roxa e molho de tomate artesanal.",
-    badge: "Tradicional",
+    description: "Calabresa e cebola roxa",
     image: images.calabresaPizza
   },
   {
     name: "Frango com Catupiry",
-    description: "Frango desfiado, catupiry cremoso e molho de tomate da casa.",
-    badge: "Cremosa",
+    description: "Frango desfiado e catupiry",
     image: images.chickenCatupiryPizza
   },
   {
     name: "Rúcula",
-    description: "Muçarela, rúcula fresca, tomate cereja e molho de tomate.",
-    badge: "Fresca",
+    description: "Muçarela, rúcula fresca e tomate cereja",
     image: images.ruculaPizza
   },
   {
+    name: "Di Parma",
+    description:
+      "Muçarela, presunto parma e finalização de raspas de limão siciliano",
+    image: images.diParmaPizza
+  },
+  {
     name: "Morango com Chocolate",
-    description: "Morango fresco com chocolate de avelã para a etapa doce.",
-    badge: "Doce",
+    description: "Morango fresco com Chocolate de Avelã",
     image: images.strawberryChocolatePizza
   },
   {
     name: "Banana Nevada",
-    description: "Banana em rodelas, leite condensado e canela para fechar o rodízio.",
-    badge: "Doce",
+    description: "Banana em rodelas, leite condensado e canela",
     image: images.bananaNevadaPizza
   }
 ];
@@ -221,27 +209,27 @@ export const paymentPolicies = [
 
 export const galleryItems = [
   {
-    title: "Fermentação natural",
-    copy: "Massa leve, aerada e descansada por 48 horas.",
+    title: "Fermentação natural de 48 horas",
+    copy: "Garante leveza e alta digestibilidade.",
     image: images.dough,
     video: videos.dough.src,
     source: videos.dough.page
   },
   {
-    title: "Forno profissional",
-    copy: "Montagem artesanal e serviço imediato no evento.",
+    title: "Forno elétrico profissional",
+    copy: "O que levamos para o evento.",
     image: images.oven,
     video: videos.oven.src,
     source: videos.oven.page
   },
   {
     title: "Ingredientes selecionados",
-    copy: "Búfala, tomate cereja, manjericão e finalizações frescas.",
+    copy: "Produção artesanal e pizzas montadas e assadas na hora.",
     image: images.rawPizza
   },
   {
-    title: "Receitas autorais",
-    copy: "Combinações clássicas e especiais para rodízios memoráveis.",
+    title: "Mesa expositora",
+    copy: "Pegador de pizzas ou pratos e talheres, conforme combinado.",
     image: images.parma,
     video: videos.brickOven.src,
     source: videos.brickOven.page

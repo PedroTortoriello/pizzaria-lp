@@ -8,22 +8,22 @@ import { reveal } from "@/lib/animations";
 
 const pillars = [
   {
-    title: "Forno e serviço imediato",
-    copy: "Montagem artesanal, calor de forno e pizzas saindo no ritmo da festa.",
+    title: "Montagem artesanal",
+    copy: "Pizzas montadas e assadas na hora.",
     image: images.oven,
     icon: Flame,
     tone: "text-italyRed"
   },
   {
-    title: "Pomodoro, mozzarella e basilico",
-    copy: "Ingredientes que remetem à Itália sem perder o frescor do evento brasileiro.",
+    title: "Ingredientes selecionados",
+    copy: "Uma experiência gastronômica pensada para eventos.",
     image: images.margherita,
     icon: Leaf,
     tone: "text-italyGreen"
   },
   {
-    title: "Massa de longa fermentação",
-    copy: "48 horas para uma base leve, aromática e com textura de pizza artesanal.",
+    title: "Fermentação natural de 48 horas",
+    copy: "Garante leveza e alta digestibilidade.",
     image: images.dough,
     icon: Wheat,
     tone: "text-italyWhite"
@@ -40,14 +40,14 @@ export function ItalianSoulSection() {
             <Pizza aria-hidden="true" size={28} />
           </div>
           <p className="text-sm font-bold uppercase text-italyGreen">
-            Spirito di pizzeria
+            A experiência Paradise Pizza&apos;s
           </p>
           <h2 className="mt-4 font-serif text-4xl font-bold leading-tight text-cream md:text-5xl">
-            Mais cheiro de forno, mais mesa italiana, mais pizza no centro.
+            Produção artesanal, ingredientes selecionados e pizzas montadas na hora.
           </h2>
           <p className="mt-6 text-base leading-8 text-cream/70 md:text-lg">
-            Uma sequência de aromas e texturas para lembrar uma mesa italiana:
-            farinha, molho, manjericão, forno quente e pizzas compartilhadas.
+            Pizza de longa fermentação, buffet gourmet e uma experiência
+            inesquecível.
           </p>
         </Reveal>
 
