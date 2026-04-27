@@ -19,6 +19,7 @@ export function MenuHighlights() {
     },
     {
       label: "Pizzas doces",
+      note: "Escolha um dos seguintes sabores para o seu rodízio",
       items: menuItems.filter((item) => sweetNames.has(item.name)),
       tone: "text-italyRed",
       border: "border-italyRed/25",
@@ -40,7 +41,7 @@ export function MenuHighlights() {
               Sabores
             </p>
             <h2 className="mt-4 max-w-3xl font-serif text-4xl font-bold leading-tight text-ink md:text-5xl">
-              Escolha um dos seguintes sabores para o seu rodízio
+              Escolha os sabores para o seu rodízio
             </h2>
             <div className="mt-5 h-1 w-56 rounded-full italian-ribbon" />
           </div>
@@ -68,7 +69,7 @@ export function MenuHighlights() {
                     {group.label}
                   </p>
                   {group.note ? (
-                    <h3 className="mt-2 max-w-2xl font-serif text-3xl font-bold text-ink md:text-4xl">
+                    <h3 className="mt-2 max-w-2xl font-serif text-3xl font-bold text-ink md:text-2xl">
                       {group.note}
                     </h3>
                   ) : null}
